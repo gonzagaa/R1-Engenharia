@@ -1,0 +1,100 @@
+#servico {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+#servico header {
+    text-align: left;
+}
+
+#servico .content span.span {
+    font-size: 1.6rem;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+#servico h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--gray);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#servico .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#servico .cards .card img {
+    aspect-ratio: 16/9;
+    border-radius: 1rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+#servico .cards .card h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+#servico .cards .card p {
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+@media (min-width: 1080px) { 
+    section#servico header {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    section#servico .content span.span {
+        font-size: 1.6rem;
+        color: var(--blue);
+        font-weight: 400;
+    }
+    
+    section#servico h2 {
+        margin-top: .5rem;
+        font-size: 3.5rem;
+        color: var(--gray);
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#servico .cards .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "A B";
+        align-items: center;
+    }
+
+    section#servico .cards .card:nth-child(2) img {
+        grid-area: B;
+    }
+
+    section#servico .cards .card:nth-child(1) .text {
+        margin-left: 6rem;
+        text-align: left;
+    }
+
+    section#servico .cards .card:nth-child(2) .text {
+        margin-right: 6rem;
+        text-align: right;
+    }
+
+    section#servico .cards .card h3 {
+        font-size: 3rem;
+    }
+
+    section#servico .cards .card p {
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
+}

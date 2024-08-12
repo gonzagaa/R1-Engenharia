@@ -1,0 +1,126 @@
+#diretoria {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+#diretoria header {
+    text-align: left;
+}
+
+#diretoria .content span.span {
+    font-size: 1.6rem;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+#diretoria h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--gray);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#diretoria .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#diretoria .cards .card {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #e2e1e1;
+    width: 100%;
+}
+
+#diretoria .cards .card img {
+    width: 10rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#diretoria .cards .card h3 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 600;
+}
+
+#diretoria .cards .card h4 {
+    font-size: 1.6rem;
+    color: #262626;
+    font-weight: 300;
+}
+
+#diretoria .cards .card p {
+    margin-top: 2rem;
+    color: #262626;
+    font-weight: 400;
+}
+
+@media (min-width: 1080px) {    
+    section#diretoria {
+        padding-top: 10rem;
+    }
+
+    section#diretoria header {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    section#diretoria .content span.span {
+        font-size: 1.6rem;
+        color: var(--blue);
+        font-weight: 400;
+    }
+    
+    section#diretoria h2 {
+        margin-top: .5rem;
+        font-size: 3.5rem;
+        color: var(--gray);
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#diretoria .content .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+    }
+
+    section#diretoria .content .cards .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        padding: 5rem;
+
+        box-shadow:  16px 16px 32px #cdcdcd,
+             -16px -16px 32px #ffffff;
+    }
+
+    section#diretoria .cards .card img {
+        width: 12rem;
+    }
+    
+    section#diretoria .cards .card h3 {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+    
+    section#diretoria .cards .card h4 {
+        font-size: 1.6rem;
+    }
+    
+    section#diretoria .cards .card p {
+        margin-top: 2rem;
+    }
+}

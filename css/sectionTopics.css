@@ -1,0 +1,81 @@
+#topics {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+
+    padding-block: 0;
+    padding-bottom: 8rem;
+}
+
+#topics .wrapper .cards {
+    background: var(--gradient);
+    padding: 3rem;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#topics .wrapper .card h2 {
+    color: #fff;
+    font-size: 6rem;
+    line-height: 1.2;
+}
+
+#topics .wrapper .card h2 span {
+    font-size: 3rem;
+}
+
+#topics .wrapper .card h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+#topics .wrapper .card p {
+    margin-top: 1rem;
+    color: #d4d4d4;
+    font-weight: 300;
+}
+
+@media (min-width: 1080px) {
+    section#topics .wrapper .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8rem;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    section#topics {
+        background: var(--gradient);
+        padding-bottom: 0;
+    }
+
+    section#topics .wrapper {
+        padding-block: 6rem;
+    }
+
+    section#topics .wrapper .cards .card {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    section#topics .wrapper .cards .card::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        left: -4rem;
+    }
+
+    section#topics .wrapper .cards .card:nth-child(1):before {
+        display: none;
+    }
+}

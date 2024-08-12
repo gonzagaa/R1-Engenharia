@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliar Engenharia</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./assets/tracosDamatta.webp" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/r1 logo.png" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="./servicos/index.html">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="./obras/index.html">Projetos</a></li>
+                    <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
+                    <li><a onclick="closeMenu()" href="#clientes">Clientes</a></li>
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/r1 logo.png" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">        
+        <div class="wrapper">
+            <div class="content">
+                <div class="text" class="text-2">
+                    <div class="text-content">
+                        <h2><span>R1</span> Engenharia</h2>
+                        <h1>Sua obra em boas mãos, do início ao fim.</h1>
+                        <div data-aos="fade-up-left" class="buttons">
+                            <a href="#services"><button>Nossos serviços</button></a>
+                            <a href="#suporte"><button>Saiba mais</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="interactive-image" class="image">
+                    <img class="desktop" src="./assets/bg r1 1.png" alt="">
+                    <img class="mobile" src="./assets/bg r1 mobile.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="sobre">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Sobre</span>
+                    <h2>Quem somos?</h2>
+                </header>
+
+                <div data-aos="fade-up-right" class="container">
+                    <div class="text">
+                        <h3>Sobre a R1</h3>
+                        <p>Somos uma Construtora focada em fornecer o <span>melhor atendimento aos nossos Clientes</span>, construindo soluções <span>rápidas e eficientes</span> em todas as etapas da obra, identificando e antecipando problemas, gerando <span>fluidez e economia com qualidade</span>. <br> Com vasta experiência na <span>execução de obras de médio e grande porte</span>, em parceria de longa data com os maiores grupos de atacarejo do Brasil, auxiliando o cliente desde a escolha da <span>melhor localização até a entrega do projeto  em funcionamento</span>, sempre focada em atender aos prazos solicitados, o que reflete diretamente no <span>aumento do faturamento do cliente</span>.</p>
+                        <div class="button">
+                            <a href="#services"><button>Nossos serviços</button></a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="image">
+                        <img src="./assets/sobre r1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service-dois" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-left">O que nós fazemos<span>?</span></h2>
+                        <h3 data-aos="fade-up-left">Estes e muitos outros serviços à sua escolha:</h3>
+
+                        <div data-aos="fade-up-left" class="topics">
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Obra Civíl</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Sistemas Elétricos</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Sistemas de Combate a Incendio e Hidráulica</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Sistema de Ar Condicionado</p>
+                        </div>
+
+                        <div data-aos="fade-up-left" class="button">
+                            <a target="_blank" href="https://wa.link/x0f801"><button>Solicite um orçamento</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right" class="image">
+                    <img src="./assets/services r1.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <section id="topics">
+        <div class="wrapper">
+            <div class="cards">
+                <div class="card">
+                    <h2><span>+</span>35</h2>
+                    <h3>Obras realizadas</h3>
+                    <p>Temos orgulho de todos os projetos concluídos até agora. Cada projeto tem sido uma parte valiosa de nossa experiência.</p>
+                </div>
+
+                <div class="card">
+                    <h2><span>+</span>9</h2>
+                    <h3>Estados atendidos</h3>
+                    <p>Temos o prazer de anunciar que já tivemos centenas de clientes de todos os cantos do Brasil, que confiaram seus projetos a nós.</p>
+                </div>
+
+                <div class="card">
+                    <h2><span>+</span>500 <span class="mil">mil</span></h2>
+                    <h3>M² Construídos</h3>
+                    <p>Temos o prazer de compartilhar com vocês que já tivemos mais de 500 mil metros construídos em diversos cantos do Brasil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Clientes</span>
+                    <h2>Nossos clientes</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/carrefour.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/assai.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/atacadao.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/newera.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/flex.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/r1 logo.png" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#sobre">Sobre</a></p>
+                    <p><a href="#services">Serviços</a></p>
+                    <p><a href="#suporte">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conecte-se conosco</h3>
+                    <p>R. Um, quadra 01 - lote 06 - <br> Polo Empresarial de Goiás, Aparecida de Goiânia - GO, 74985-115</p>
+                    <p>contato@eliarengenharia.com.br</p>
+                    <p><a target="_blank" href="tel:+55-64-93442-2520">(62) 9999-9999</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/lsbdigital/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - Eliar Engenharia</p>
+
+                <a target="_blank" href="https://instagram.com/gonzxgx">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="./assets/GustavoGonzaga Logo Small.svg" alt="">
+                        Gustavo Gonzaga
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+      </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

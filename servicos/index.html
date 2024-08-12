@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliar Engenharia</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./assets/tracosDamatta.webp" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="../index.html">
+                <img src="../assets/r1 logo.png" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="../index.html">Home</a></li>
+                    <li><a onclick="closeMenu()" href="../index.html#sobre">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="../servicos/index.html">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="../obras/index.html">Projetos</a></li>
+                    <li><a onclick="closeMenu()" href="../index.html#contato">Contato</a></li>
+                    <li><a onclick="closeMenu()" href="../index.html#clientes">Clientes</a></li>
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/logo DAMATTA escrita.svg" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="headerPage">
+        <img class="bg" src="../assets/bg r1 1.png" alt="">
+        <div class="wrapper">
+            <h1>Nossos serviços</h1>
+            <p>Soluções completas para todas as etapas do seu projeto</p>
+        </div>
+    </header>
+
+    <section id="servico">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <h2>Nós fornecemos serviços completos, desde a escolha do ponto comercial até a entrega ao cliente.</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="../assets/servico1 r1.png" alt="">
+                        <div class="text">
+                            <h3>Serviços de Captação de áreas</h3>
+                            <p>Tudo começa com os serviços de pré-construção. Qual é o primeiro passo em que você precisa se concentrar? Que tipo de licenças de construção serão necessárias? Responderemos a essas e muitas outras perguntas que são essenciais saber antes de iniciar o processo de construção. Desenvolveremos um plano detalhado que pode orientá-lo durante todo o processo.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/servico2 r1.jpg" alt="">
+                        <div class="text">
+                            <h3>Planejamento e construção</h3>
+                            <p> Nossa equipe dedicada de orçamentista, projetistas, gerentes de projeto e construtores sempre garante que o edifício seja projetado da maneira mais adequada e correta possível. Oferecer serviços de alta qualidade é um dos nossos principais objetivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">Equipe</span>
+                    <h2>Conheça nossa equipe</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="../assets/equipe 1.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/equipe 2.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/equipe 3.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/equipe 4.png" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/equipe 5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="../assets/r1 logo.png" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#sobre">Sobre</a></p>
+                    <p><a href="#services">Serviços</a></p>
+                    <p><a href="#suporte">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conecte-se conosco</h3>
+                    <p>R. Um, quadra 01 - lote 06 - <br> Polo Empresarial de Goiás, Aparecida de Goiânia - GO, 74985-115</p>
+                    <p>contato@eliarengenharia.com.br</p>
+                    <p><a target="_blank" href="tel:+55-64-93442-2520">(62) 9999-9999</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/lsbdigital/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - Eliar Engenharia</p>
+
+                <a target="_blank" href="https://instagram.com/gonzxgx">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="./assets/GustavoGonzaga Logo Small.svg" alt="">
+                        Gustavo Gonzaga
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+      </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html> 

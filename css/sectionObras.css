@@ -1,0 +1,80 @@
+#obras {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+#obras header {
+    text-align: left;
+}
+
+#obras .content span.span {
+    font-size: 1.6rem;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+#obras h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--gray);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#obras .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#obras .image {
+    border-radius: 1rem;
+    overflow: hidden;
+    aspect-ratio: 16/11;
+}
+
+#obras .image img {
+    width: 100%;
+    aspect-ratio: 16/11;
+    object-fit: cover;
+}
+
+@media (min-width: 1080px) {    
+    section#obras header {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    section#obras .content span.span {
+        font-size: 1.6rem;
+        color: var(--blue);
+        font-weight: 400;
+    }
+    
+    section#obras h2 {
+        margin-top: .5rem;
+        font-size: 3.5rem;
+        color: var(--gray);
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#obras .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    section#obras .image img {
+        transition: all 500ms ease-in-out;
+    }
+
+    section#obras .image img:hover {
+        transform: scale(1.2);
+    }
+}

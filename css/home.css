@@ -1,0 +1,213 @@
+
+
+/* HOME =================== */
+#home {
+    overflow: hidden;
+    min-height: 100vh;
+
+
+    position: relative;
+    z-index: 2;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #000000ad, transparent);
+    z-index: 1;
+}
+
+#home .content .image img.mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    aspect-ratio: 9/16;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(.5);
+}
+
+#home .content .image img.desktop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(.5);
+}
+
+#home .content {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 5rem;
+}
+
+#home .content .text-content {
+    position: relative;
+    z-index: 5;
+
+    margin-top: -15rem;
+}
+
+#home .content img.logo {
+    width: 12rem;
+    margin-left: -2.5rem;
+    filter: drop-shadow(0px 0px 40px #ffffffe3);
+}
+
+#home .content h2 {
+    color: #fff;
+
+    margin-bottom: 1rem;
+}
+
+#home .content h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#home .content h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 2.8rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#home .content .buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+#home .content a button {
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+}
+
+#home .content a:nth-child(1) button {
+    background-color: transparent;
+    outline: 1px solid var(--white);
+    color: var(--white);
+}
+
+#home .content a:nth-child(2) button {
+    background: var(--gradient);
+    color: var(--white);
+}
+
+@media (min-width: 1080px) {  
+    header#home {
+        background-image: none;
+        min-height: 0;
+        height: 100vh;
+    }
+
+    header#home::before {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, #000000bc, transparent);
+    }
+
+    header#home .content {
+        text-align: left;
+        align-items: start;
+        z-index: 2;
+        min-height: 0;
+        height: 100vh;
+    }
+
+    header#home .content img.logo {
+        width: 18rem;
+        margin-bottom: 1rem;
+        filter: drop-shadow(0px 0px 40px #ffffffe3);
+        margin-left: initial;
+    }
+
+    header#home .content .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 3%;
+        margin-top: initial;
+    }
+
+    header#home .content .text-content h2 {
+        font-size: 3.5rem;
+    }
+
+    header#home .content .text-content h2 span {
+        font-size: 4rem;
+    }
+
+    header#home .content .text-content h1 {
+        font-size: 5rem;
+        width: 70%;
+        margin-bottom: 2rem;
+        line-height: 1.2;
+    }
+
+    header#home .content .buttons {
+        margin-top: 2rem;
+        flex-direction: row;
+    }
+
+    header#home .content .buttons a button {
+        font-size: 2rem;
+    }
+
+    header#home .content .image img.mobile {
+        display: none;
+    }
+
+    header#home .content .image img.desktop {
+        display: initial;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        filter: brightness(.5);
+    }
+}
+
+@media (min-width: 1400px) {
+    header#home .content .text-content h1 {
+        font-size: 5.5rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    header#home .content .text-content h1 {
+        font-size: 6rem;
+    }
+}

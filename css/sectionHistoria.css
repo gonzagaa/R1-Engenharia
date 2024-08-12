@@ -1,0 +1,136 @@
+
+
+#historia {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+#historia header {
+    text-align: left;
+}
+
+#historia .content span.span {
+    font-size: 1.6rem;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+#historia h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--gray);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#historia .text {
+    text-align: left;
+}
+
+#historia .text h3 {
+    font-size: 2rem;
+    color: var(--blue);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#historia .text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--gray);
+    font-weight: 300;
+}
+
+#historia .text p span {
+    color: #000000;
+    font-weight: 500;
+}
+
+#historia .text a button {
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background: var(--gradient);
+    color: var(--white);
+    margin-top: 2rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#historia .text a button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+#historia .image img {
+    margin-top: 4rem;
+    width: 100%;
+    border-radius: 1rem;
+    filter: drop-shadow(10px 10px 30px #b5b5b5);
+}
+
+  
+@media (min-width: 1080px) { 
+    section#historia header {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    section#historia .content span.span {
+        font-size: 1.6rem;
+        color: var(--blue);
+        font-weight: 400;
+    }
+    
+    section#historia h2 {
+        margin-top: .5rem;
+        font-size: 3.5rem;
+        color: var(--gray);
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#historia .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "A B";
+        align-items: center;
+        gap: 8rem;
+    }
+
+    section#historia .text {
+        text-align: start;
+        grid-area: B;
+    }
+
+    section#historia .text h3 {
+        font-size: 2.4rem;
+    }
+    
+    section#historia .text p {
+        font-size: 1.8rem;
+    }
+
+    section#historia .text a button {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+    }
+
+    section#historia .content .image img {
+        margin-top: initial;
+    }
+}
+
+@media (min-width: 1400px) {
+    section#historia .text h3 {
+        font-size: 3rem;
+    }
+    
+    section#historia .text p {
+        font-size: 2rem;
+    }
+}
