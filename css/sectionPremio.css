@@ -1,0 +1,134 @@
+#premio {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+#premio header {
+    text-align: left;
+}
+
+#premio .content span.span {
+    font-size: 1.6rem;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+#premio h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--gray);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#premio .text {
+    text-align: left;
+}
+
+#premio .text h3 {
+    font-size: 2rem;
+    color: var(--blue);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#premio .text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--gray);
+    font-weight: 300;
+}
+
+#premio .text p span {
+    color: #000000;
+    font-weight: 500;
+}
+
+#premio .text a button {
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background: var(--gradient);
+    color: var(--white);
+    margin-top: 2rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#premio .text a button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+#premio .image img {
+    margin-top: 4rem;
+    width: 100%;
+    border-radius: 1rem;
+    filter: drop-shadow(10px 10px 30px #b5b5b5);
+}
+
+  
+@media (min-width: 1080px) {    
+    section#premio header {
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+    
+    section#premio .content span.span {
+        font-size: 1.6rem;
+        color: var(--blue);
+        font-weight: 400;
+    }
+    
+    section#premio h2 {
+        margin-top: .5rem;
+        font-size: 3.5rem;
+        color: var(--gray);
+        font-weight: 500;
+    
+        margin-bottom: 7rem;
+    }
+
+    section#premio .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "A B";
+        align-items: center;
+        gap: 8rem;
+    }
+
+    section#premio .text {
+        text-align: end;
+        grid-area: A;
+    }
+
+    section#premio .text h3 {
+        font-size: 2.4rem;
+    }
+    
+    section#premio .text p {
+        font-size: 1.8rem;
+    }
+
+    section#premio .text a button {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+    }
+
+    section#premio .content .image img {
+        margin-top: initial;
+    }
+}
+
+@media (min-width: 1400px) {
+    section#premio .text h3 {
+        font-size: 3rem;
+    }
+    
+    section#premio .text p {
+        font-size: 2rem;
+    }
+}
