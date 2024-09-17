@@ -68,6 +68,8 @@
     width: 100%;
     border-radius: 1rem;
     filter: drop-shadow(10px 10px 30px #b5b5b5);
+    aspect-ratio: 16/11;
+    object-fit: cover;
 }
 
   
